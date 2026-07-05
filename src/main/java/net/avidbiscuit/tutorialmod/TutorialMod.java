@@ -1,5 +1,6 @@
 package net.avidbiscuit.tutorialmod;
 
+import net.avidbiscuit.tutorialmod.block.ModBlocks;
 import net.avidbiscuit.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,6 +16,7 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {
