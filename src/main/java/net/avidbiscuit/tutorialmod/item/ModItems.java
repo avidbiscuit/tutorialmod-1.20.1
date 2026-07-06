@@ -13,16 +13,21 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item COIN = registerItem("coin", new Item(new FabricItemSettings()));
+    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
 
-    private static void addItemToItemGroup (FabricItemGroupEntries entries) {
+    private static void addItemToItemGroup(FabricItemGroupEntries entries) {
+
         entries.add(COIN);
+        entries.add(RUBY);
+
+
     }
 
-    private static Item registerItem(String name, Item item){
+    private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
 
-    public static void registerModItems(){
+    public static void registerModItems() {
         TutorialMod.LOGGER.info("Registering mod items for " + TutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroup);
