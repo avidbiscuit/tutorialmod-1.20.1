@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.coin": "Coin",
   "item.tutorialmod.ruby": "Ruby",
-  "block.tutorialmod.raw_stone": "Raw Stone"
+  "block.tutorialmod.raw_stone": "Raw Stone",
+  "item.tutorialmod.raw_ruby": "Raw Ruby",
+  "itemgroup.ruby": "Ruby Tutorial Group"
 }

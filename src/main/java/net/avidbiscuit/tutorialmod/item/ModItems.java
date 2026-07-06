@@ -14,11 +14,13 @@ public class ModItems {
 
     public static final Item COIN = registerItem("coin", new Item(new FabricItemSettings()));
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
 
     private static void addItemToItemGroup(FabricItemGroupEntries entries) {
 
         entries.add(COIN);
         entries.add(RUBY);
+        entries.add(RAW_RUBY);
 
 
     }
@@ -30,6 +32,5 @@ public class ModItems {
     public static void registerModItems() {
         TutorialMod.LOGGER.info("Registering mod items for " + TutorialMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroup);
     }
 }
