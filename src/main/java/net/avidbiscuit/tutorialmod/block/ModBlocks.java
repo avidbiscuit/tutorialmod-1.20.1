@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block BRICK = registerBlock("raw_stone",
+    public static final Block RAW_STONE = registerBlock("raw_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block){

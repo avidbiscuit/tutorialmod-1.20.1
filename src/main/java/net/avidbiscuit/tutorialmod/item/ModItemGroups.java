@@ -1,7 +1,9 @@
 package net.avidbiscuit.tutorialmod.item;
 
 import net.avidbiscuit.tutorialmod.TutorialMod;
+import net.avidbiscuit.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.COIN);
                         entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModBlocks.RAW_STONE);
 
                     }).build());
 
