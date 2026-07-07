@@ -20,6 +20,9 @@ public class ModBlocks {
     public static final Block RAW_STONE = registerBlock("raw_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);

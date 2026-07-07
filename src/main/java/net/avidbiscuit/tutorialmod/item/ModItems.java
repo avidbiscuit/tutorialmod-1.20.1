@@ -22,7 +22,6 @@ public class ModItems {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
 
-
     }
 
     private static Item registerItem(String name, Item item) {
