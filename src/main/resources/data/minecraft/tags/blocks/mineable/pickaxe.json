@@ -3,6 +3,7 @@
   "values":[
     "tutorialmod:ruby_block",
     "tutorialmod:raw_stone",
-    "tutorialmod:raw_ruby_block"
+    "tutorialmod:raw_ruby_block",
+    "tutorialmod:ruby_ore"
   ]
 }
