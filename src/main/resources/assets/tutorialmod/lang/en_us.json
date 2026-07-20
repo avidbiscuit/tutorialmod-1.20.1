@@ -2,10 +2,14 @@
   "item.tutorialmod.coin": "Coin",
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.ruby": "Ruby",
+
   "block.tutorialmod.raw_stone": "Raw Stone",
   "item.tutorialmod.raw_ruby": "Raw Ruby",
   "block.tutorialmod.ruby_block": "Ruby Block",
+
   "block.tutorialmod.raw_ruby_block": "Raw Ruby Block",
   "block.tutorialmod.ruby_ore": "Ruby Ore",
+  "block.tutorialmod.sound_block": "Sound Block",
+
   "itemgroup.ruby": "Ruby Tutorial Group"
 }
