@@ -5,6 +5,7 @@ import net.avidbiscuit.tutorialmod.item.ModItemGroups;
 import net.avidbiscuit.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -20,6 +21,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
 
 	public static Identifier id(String path) {

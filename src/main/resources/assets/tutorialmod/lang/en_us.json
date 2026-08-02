@@ -12,5 +12,7 @@
   "block.tutorialmod.ruby_ore": "Ruby Ore",
   "block.tutorialmod.sound_block": "Sound Block",
 
+  "item.tutorialmod.coal_briquette": "Coal Briquette",
+
   "itemgroup.ruby": "Ruby Tutorial Group"
 }

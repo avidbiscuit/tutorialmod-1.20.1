@@ -28,6 +28,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.TOMATO);
 
+                        entries.add(ModItems.COAL_BRIQUETTE);
+                        entries.add(ModItems.METAL_DETECTOR);
+
                     }).build());
 
     public static void registerItemGroups(){
