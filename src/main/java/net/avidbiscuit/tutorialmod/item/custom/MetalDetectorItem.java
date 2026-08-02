@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+
 import java.util.List;
 
 public class MetalDetectorItem extends Item {
@@ -85,9 +86,9 @@ public class MetalDetectorItem extends Item {
                             cart.getBlockZ() + ")"
             ), false);
 
-                return true;
+                return true; //this return true statement only applies to the isEmpty() method
         }
-            return false;
+            return false; //this return false statement applies to the whole method findMinecart()
     }
 
     private boolean isValuableBlock(BlockState state) {
