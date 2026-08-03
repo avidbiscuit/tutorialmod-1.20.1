@@ -16,21 +16,25 @@ public class ModItemGroups {
         new Identifier(TutorialMod.MOD_ID, "ruby"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.RUBY);
                         entries.add(ModBlocks.RUBY_ORE);
-                        entries.add(ModItems.COIN);
+                        entries.add(ModItems.RUBY);
 
                         entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
+                        entries.add(ModBlocks.RUBY_BLOCK);
+
+                        entries.add(ModBlocks.WEATHERED_WOOD);
+                        entries.add(ModBlocks.WEATHERED_WOOD_PLANK);
                         entries.add(ModBlocks.WEATHERED_BRICK);
 
-                        entries.add(ModBlocks.RUBY_BLOCK);
-                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
+                        entries.add(ModItems.COIN);
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.TOMATO);
 
                         entries.add(ModItems.COAL_BRIQUETTE);
                         entries.add(ModItems.METAL_DETECTOR);
+
 
                     }).build());
 

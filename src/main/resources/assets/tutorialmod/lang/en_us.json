@@ -12,11 +12,13 @@
   "block.tutorialmod.sound_block": "Sound Block",
 
   "block.tutorialmod.end_stone_ruby_ore": "End Stone Ruby Ore",
-  "block.tutorialmod.ruby_block": "Ruby Block",
+  "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.weathered_brick": "Weathered Brick",
+  "block.tutorialmod.weathered_wood": "Weathered Wood",
+  "block.tutorialmod.weathered_wood_plank": "Weathered Wood Planks",
 
 
-  "tooltip.tutorialmod.metal_detector.tooltip": "Finds Iron and Diamond Underground!",
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a sound when right-clicked",
 
   "itemgroup.ruby": "Ruby Tutorial Group"

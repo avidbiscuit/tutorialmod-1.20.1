@@ -38,10 +38,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.WEATHERED_BRICK)
             .add(ModBlocks.END_STONE_RUBY_ORE);
 
+    getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+            .add(ModBlocks.WEATHERED_WOOD)
+            .add(ModBlocks.WEATHERED_WOOD_PLANK);
+
     getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
             .add(ModBlocks.RUBY_ORE)
-            .add(ModBlocks.RAW_RUBY_BLOCK)
-            .add(ModBlocks.WEATHERED_BRICK);
+            .add(ModBlocks.RAW_RUBY_BLOCK);
 
     getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
             .add(ModBlocks.RUBY_BLOCK)
@@ -49,6 +52,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
             .add(ModBlocks.END_STONE_RUBY_ORE);
+
+    getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_0")))
+            .add(ModBlocks.WEATHERED_WOOD);
+
+    getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+            .add(ModBlocks.WEATHERED_WOOD);
 
     }
 }

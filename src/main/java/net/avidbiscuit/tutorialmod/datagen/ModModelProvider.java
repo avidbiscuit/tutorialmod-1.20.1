@@ -22,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEATHERED_BRICK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEATHERED_WOOD_PLANK);
+
+        blockStateModelGenerator.registerLog(ModBlocks.WEATHERED_WOOD).log(ModBlocks.WEATHERED_WOOD);
     }
 
     @Override

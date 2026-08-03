@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -35,6 +36,12 @@ public class ModBlocks {
 
     public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+
+    public static final Block WEATHERED_WOOD = registerBlock("weathered_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f)));
+
+    public static final Block WEATHERED_WOOD_PLANK = registerBlock("weathered_wood_plank",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

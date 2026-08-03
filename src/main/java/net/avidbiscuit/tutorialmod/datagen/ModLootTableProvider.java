@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -27,6 +26,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.SOUND_BLOCK);
         addDrop(ModBlocks.WEATHERED_BRICK);
+        addDrop(ModBlocks.WEATHERED_WOOD);
+        addDrop(ModBlocks.WEATHERED_WOOD_PLANK);
 
         addDrop(ModBlocks.RAW_RUBY_BLOCK, copperLikeOreDrops(ModBlocks.RAW_RUBY_BLOCK, ModItems.RAW_RUBY));
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
@@ -42,4 +43,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 5.0F)))
                                 .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
+
 }
