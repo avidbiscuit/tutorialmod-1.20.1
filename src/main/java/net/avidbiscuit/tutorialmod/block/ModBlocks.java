@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block RAW_STONE = registerBlock("raw_stone",
+    public static final Block WEATHERED_BRICK = registerBlock("weathered_brick",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
@@ -31,6 +31,9 @@ public class ModBlocks {
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+
+    public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
 
     private static Block registerBlock(String name, Block block){

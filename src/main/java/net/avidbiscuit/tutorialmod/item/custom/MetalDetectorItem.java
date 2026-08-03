@@ -1,5 +1,6 @@
 package net.avidbiscuit.tutorialmod.item.custom;
 
+import net.avidbiscuit.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -47,6 +48,8 @@ public class MetalDetectorItem extends Item {
             }
 
 
+            /*this if statement will look in the foundBlock and foundMinecart statement,
+            if both return true then the text will appear.*/
 
             if(!foundBlock && !foundMinecart){
                 player.sendMessage(Text.literal("No Valuables Found!"));
@@ -71,7 +74,8 @@ public class MetalDetectorItem extends Item {
     private boolean findMinecart(World world, BlockPos pos, PlayerEntity player) {
         List<ChestMinecartEntity> minecarts = world.getEntitiesByClass(
                 ChestMinecartEntity.class,
-                new net.minecraft.util.math.Box(pos).expand(5),
+                new net.minecraft.util.math.Box(pos).withMinY(-64)
+                        .withMaxY(pos.getY()),
                 entity -> true
 
         );
@@ -92,7 +96,7 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE);
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
 
 
     }
