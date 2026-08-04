@@ -59,5 +59,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
             .add(ModBlocks.WEATHERED_WOOD);
 
+    getOrCreateTagBuilder(BlockTags.FENCES)
+            .add(ModBlocks.WEATHERED_WOOD_FENCE);
+    getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+            .add(ModBlocks.WEATHERED_WOOD_FENCE_GATE);
+    getOrCreateTagBuilder(BlockTags.WALLS)
+            .add(ModBlocks.RUBY_WALL);
+
     }
 }

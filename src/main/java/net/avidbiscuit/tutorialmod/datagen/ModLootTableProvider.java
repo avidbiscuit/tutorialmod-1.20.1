@@ -33,6 +33,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.END_STONE_RUBY_ORE, copperLikeOreDrops(ModBlocks.END_STONE_RUBY_ORE, ModItems.RAW_RUBY));
 
+        addDrop(ModBlocks.WEATHERED_WOOD_BUTTON);
+        addDrop(ModBlocks.WEATHERED_WOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.WEATHERED_WOOD_STAIRS);
+        addDrop(ModBlocks.WEATHERED_WOOD_FENCE);
+        addDrop(ModBlocks.WEATHERED_WOOD_FENCE_GATE);
+        addDrop(ModBlocks.RUBY_WALL);
+        addDrop(ModBlocks.WEATHERED_WOOD_TRAP_DOOR);
+
+        addDrop(ModBlocks.WEATHERED_WOOD_DOOR, doorDrops(ModBlocks.WEATHERED_WOOD_DOOR));
+        addDrop(ModBlocks.WEATHERED_WOOD_SLAB, slabDrops(ModBlocks.WEATHERED_WOOD_SLAB));
+
+
     }
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return dropsWithSilkTouch(

@@ -22,10 +22,19 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.RUBY_WALL);
 
+                        entries.add(ModBlocks.WEATHERED_BRICK);
                         entries.add(ModBlocks.WEATHERED_WOOD);
                         entries.add(ModBlocks.WEATHERED_WOOD_PLANK);
-                        entries.add(ModBlocks.WEATHERED_BRICK);
+                        entries.add(ModBlocks.WEATHERED_WOOD_DOOR);
+                        entries.add(ModBlocks.WEATHERED_WOOD_TRAP_DOOR);
+                        entries.add(ModBlocks.WEATHERED_WOOD_STAIRS);
+                        entries.add(ModBlocks.WEATHERED_WOOD_FENCE);
+                        entries.add(ModBlocks.WEATHERED_WOOD_FENCE_GATE);
+                        entries.add(ModBlocks.WEATHERED_WOOD_SLAB);
+                        entries.add(ModBlocks.WEATHERED_WOOD_BUTTON);
+                        entries.add(ModBlocks.WEATHERED_WOOD_PRESSURE_PLATE);
 
 
                         entries.add(ModItems.COIN);
@@ -34,6 +43,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.COAL_BRIQUETTE);
                         entries.add(ModItems.METAL_DETECTOR);
+
+
 
 
                     }).build());
