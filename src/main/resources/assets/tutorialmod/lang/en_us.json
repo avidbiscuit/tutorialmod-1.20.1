@@ -19,12 +19,12 @@
   "block.tutorialmod.weathered_wood_plank": "Weathered Wood Planks",
 
   "block.tutorialmod.weathered_buttom": "Weathered Button",
-  "block.tutorialmid.weathered_pressure_plate": "Weathered Pressure Plate",
-  "block.tutorialmid.weathered_stairs": "Weathered Stairs",
-  "block.tutorialmid.weathered_fence": "Weathered Fence",
-  "block.tutorialmid.weathered_fence_gate": "Weathered Fence Gate",
-  "block.tutorialmid.weathered_wood_door": "Weathered Door",
-  "block.tutorialmid.weatered_wood_trap_door": "Weathered Trap Door",
+  "block.tutorialmod.weathered_pressure_plate": "Weathered Pressure Plate",
+  "block.tutorialmod.weathered_stairs": "Weathered Stairs",
+  "block.tutorialmod.weathered_fence": "Weathered Fence",
+  "block.tutorialmod.weathered_fence_gate": "Weathered Fence Gate",
+  "block.tutorialmod.weathered_wood_door": "Weathered Door",
+  "block.tutorialmod.weathered_wood_trap_door": "Weathered Trap Door",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a sound when right-clicked",
