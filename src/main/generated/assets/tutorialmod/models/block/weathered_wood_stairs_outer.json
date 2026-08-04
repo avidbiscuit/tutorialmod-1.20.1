@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "tutorialmod:block/weathered_wood_plank",
+    "side": "tutorialmod:block/weathered_wood_plank",
+    "top": "tutorialmod:block/weathered_wood_plank"
+  }
+}
