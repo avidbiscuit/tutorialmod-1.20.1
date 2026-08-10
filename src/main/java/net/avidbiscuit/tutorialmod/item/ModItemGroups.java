@@ -40,6 +40,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COIN);
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.RUBY_STAFF);
 
                         entries.add(ModItems.COAL_BRIQUETTE);
                         entries.add(ModItems.METAL_DETECTOR);
