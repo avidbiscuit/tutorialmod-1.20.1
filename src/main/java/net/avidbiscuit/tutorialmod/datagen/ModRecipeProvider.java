@@ -5,8 +5,11 @@ import net.avidbiscuit.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -26,5 +29,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f, 100, "ruby");
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY,
                 RecipeCategory.DECORATIONS, ModBlocks.RUBY_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_PICKAXE, 1)
+                .pattern("RRR")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('R', ModItems.RUBY)
+                .input('#', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_RUBY)));
+
     }
 }
