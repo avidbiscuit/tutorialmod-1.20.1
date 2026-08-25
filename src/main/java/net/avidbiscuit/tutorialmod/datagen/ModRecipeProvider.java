@@ -38,7 +38,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_RUBY)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_AXE, 1)
+                .pattern(" RR")
+                .pattern(" #R")
+                .pattern(" # ")
+                .input('R', ModItems.RUBY)
+                .input('#', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_AXE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_SWORD, 1)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" # ")
+                .input('R', ModItems.RUBY)
+                .input('#', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_HOE, 1)
+                .pattern(" RR")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('R', ModItems.RUBY)
+                .input('#', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_SHOVEL, 1)
+                .pattern(" R ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('R', ModItems.RUBY)
+                .input('#', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_SHOVEL)));
 
     }
 }
