@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "tutorialmod:ruby"
+    }
+  },
+  "pattern": [
+    " R ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "tutorialmod:ruby_shovel"
+  },
+  "show_notification": true
+}

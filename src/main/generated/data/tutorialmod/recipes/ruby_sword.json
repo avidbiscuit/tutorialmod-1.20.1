@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "tutorialmod:ruby"
+    }
+  },
+  "pattern": [
+    " R ",
+    " R ",
+    " # "
+  ],
+  "result": {
+    "item": "tutorialmod:ruby_sword"
+  },
+  "show_notification": true
+}
