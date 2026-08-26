@@ -20,9 +20,9 @@ public class TutorialModClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WEATHERED_WOOD_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WEATHERED_WOOD_TRAP_DOOR, RenderLayer.getCutout());
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            ManaManager.tick();
-        });
+        ClientTickEvents.END_CLIENT_TICK.register(client ->
+            ManaManager.tick()
+        );
 
         HudRenderCallback.EVENT.register((drawContext, tickDelta) -> {
 
