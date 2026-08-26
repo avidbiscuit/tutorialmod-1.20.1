@@ -2,9 +2,9 @@ package net.avidbiscuit.tutorialmod.item;
 
 import net.avidbiscuit.tutorialmod.TutorialMod;
 import net.avidbiscuit.tutorialmod.item.custom.MetalDetectorItem;
+import net.avidbiscuit.tutorialmod.item.custom.RubyStaffItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -24,7 +24,7 @@ public class ModItems {
             new MetalDetectorItem(new FabricItemSettings().maxDamage(100)));
 
     public static final Item RUBY_STAFF = registerItem("ruby_staff",
-            new Item(new FabricItemSettings().maxCount(1)));
+            new RubyStaffItem(new FabricItemSettings().maxCount(1).maxDamage(100)));
 
     public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe",
             new PickaxeItem(ModToolMaterial.RUBY, 2, 2f, new  FabricItemSettings()));
@@ -36,18 +36,6 @@ public class ModItems {
             new SwordItem(ModToolMaterial.RUBY, 6, 3f, new  FabricItemSettings()));
     public static final Item RUBY_HOE = registerItem("ruby_hoe",
             new HoeItem(ModToolMaterial.RUBY, 1, 1f, new  FabricItemSettings()));
-
-
-
-
-
-
-    private static void addItemToItemGroup(FabricItemGroupEntries entries) {
-
-        entries.add(COIN);
-        entries.add(RUBY);
-        entries.add(RAW_RUBY);
-    }
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
