@@ -3,6 +3,7 @@ package net.avidbiscuit.tutorialmod;
 import net.avidbiscuit.tutorialmod.block.ModBlocks;
 import net.avidbiscuit.tutorialmod.item.ModItemGroups;
 import net.avidbiscuit.tutorialmod.item.ModItems;
+import net.avidbiscuit.tutorialmod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -17,15 +18,13 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.registerModItems();
-
-		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 
-		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
-	}
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
-	public static Identifier id(String path) {
-		return new Identifier(MOD_ID, path);
+		ModLootTableModifiers.modifyLootTables();
+
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
 }
