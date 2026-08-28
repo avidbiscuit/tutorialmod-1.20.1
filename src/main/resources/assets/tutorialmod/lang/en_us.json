@@ -32,6 +32,7 @@
   "block.tutorialmod.weathered_fence_gate": "Weathered Fence Gate",
   "block.tutorialmod.weathered_wood_door": "Weathered Door",
   "block.tutorialmod.weathered_wood_trap_door": "Weathered Trap Door",
+  "block.tutorialmod.dahlia": "Dahlia",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a sound when right-clicked",

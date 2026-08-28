@@ -5,9 +5,7 @@ import net.avidbiscuit.tutorialmod.item.ModItemGroups;
 import net.avidbiscuit.tutorialmod.item.ModItems;
 import net.avidbiscuit.tutorialmod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

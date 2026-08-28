@@ -6,6 +6,7 @@ import net.avidbiscuit.tutorialmod.block.custom.TomatoCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -68,6 +69,12 @@ public class ModBlocks {
 
     public static final Block WEATHERED_WOOD_TRAP_DOOR = registerBlock("weathered_wood_trap_door",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(4f).nonOpaque(), BlockSetType.OAK));
+
+    public static final Block DAHLIA = registerBlock("dahlia",
+            new FlowerBlock(StatusEffects.HEALTH_BOOST, 10, //Status effect determines what it will do in SUS STEW
+                    FabricBlockSettings.copyOf(Blocks.DANDELION).nonOpaque().noCollision()));
+    public static final Block POTTED_DAHLIA = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "potted_dahlia"),
+            new FlowerPotBlock(DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION).nonOpaque()));
 
 
 public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "tomato_crop"),

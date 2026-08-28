@@ -51,6 +51,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_SWORD);
                         entries.add(ModItems.RUBY_HOE);
 
+                        entries.add(ModBlocks.DAHLIA);
+
 
 
 
