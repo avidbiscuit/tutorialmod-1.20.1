@@ -1,8 +1,10 @@
 package net.avidbiscuit.tutorialmod.item;
 
 import net.avidbiscuit.tutorialmod.TutorialMod;
+import net.avidbiscuit.tutorialmod.block.ModBlocks;
 import net.avidbiscuit.tutorialmod.item.custom.MetalDetectorItem;
 import net.avidbiscuit.tutorialmod.item.custom.RubyStaffItem;
+import net.avidbiscuit.tutorialmod.item.custom.tomatoItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -18,7 +20,11 @@ public class ModItems {
     public static final Item COAL_BRIQUETTE = registerItem("coal_briquette",
             new Item(new FabricItemSettings()));
 
-    public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+    public static final Item TOMATO = registerItem("tomato", new tomatoItem(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP,new FabricItemSettings()));
+
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(100)));
 

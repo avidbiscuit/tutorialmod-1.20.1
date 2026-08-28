@@ -3,7 +3,6 @@ package net.avidbiscuit.tutorialmod.item;
 import net.avidbiscuit.tutorialmod.TutorialMod;
 import net.avidbiscuit.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -40,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COIN);
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.TOMATO_SEEDS);
                         entries.add(ModItems.RUBY_STAFF);
 
                         entries.add(ModItems.COAL_BRIQUETTE);

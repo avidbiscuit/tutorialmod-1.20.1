@@ -1,6 +1,7 @@
 package net.avidbiscuit.tutorialmod.datagen;
 
 import net.avidbiscuit.tutorialmod.block.ModBlocks;
+import net.avidbiscuit.tutorialmod.block.custom.TomatoCropBlock;
 import net.avidbiscuit.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -37,6 +38,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.WEATHERED_WOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.WEATHERED_WOOD_TRAP_DOOR);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override

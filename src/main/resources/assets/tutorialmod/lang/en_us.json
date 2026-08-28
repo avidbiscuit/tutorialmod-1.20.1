@@ -4,7 +4,7 @@
   "item.tutorialmod.ruby": "Ruby",
 
   "item.tutorialmod.raw_ruby": "Raw Ruby",
-  "item.tutorialmod.tomato": "Tomato",
+  "item.tutorialmod.tomato": "Magic Tomato",
   "item.tutorialmod.coal_briquette": "Coal Briquette",
   "item.tutorialmod.ruby_staff": "Ruby Staff",
   "item.tutorialmod.ruby_pickaxe": "Ruby Pickaxe",
@@ -12,6 +12,7 @@
   "item.tutorialmod.ruby_sword": "Ruby Sword",
   "item.tutorialmod.ruby_hoe": "Ruby Hoe",
   "item.tutorialmod.ruby_shovel": "Ruby Shovel",
+  "item.tutorialmod.tomato_seeds": "Tomato Seeds",
 
   "block.tutorialmod.raw_ruby_block": "Raw Ruby Block",
   "block.tutorialmod.ruby_ore": "Ruby Ore",
@@ -34,7 +35,8 @@
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a sound when right-clicked",
-
+  "tooltip.tutorialmod.ruby_staff.tooltip": "One use only - uses 10 mana",
+  "item.tutorialmod.tomato.tooltip": "May cause levitation",
 
   "itemgroup.ruby": "Ruby Tutorial Group"
 }

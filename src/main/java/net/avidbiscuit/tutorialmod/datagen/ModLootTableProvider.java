@@ -1,6 +1,7 @@
 package net.avidbiscuit.tutorialmod.datagen;
 
 import net.avidbiscuit.tutorialmod.block.ModBlocks;
+import net.avidbiscuit.tutorialmod.block.custom.TomatoCropBlock;
 import net.avidbiscuit.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -8,11 +9,13 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -43,6 +46,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.WEATHERED_WOOD_DOOR, doorDrops(ModBlocks.WEATHERED_WOOD_DOOR));
         addDrop(ModBlocks.WEATHERED_WOOD_SLAB, slabDrops(ModBlocks.WEATHERED_WOOD_SLAB));
+
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(TomatoCropBlock.AGE, 5));
+        addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, builder));
 
 
     }

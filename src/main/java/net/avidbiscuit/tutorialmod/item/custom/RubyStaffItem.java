@@ -1,17 +1,22 @@
 package net.avidbiscuit.tutorialmod.item.custom;
 
 import net.avidbiscuit.tutorialmod.block.ModBlocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Random;
 
 public class RubyStaffItem  extends Item {
@@ -126,6 +131,12 @@ public class RubyStaffItem  extends Item {
         if (player.hasStatusEffect(StatusEffects.SLOWNESS)|| player.hasStatusEffect(StatusEffects.MINING_FATIGUE) || player.hasStatusEffect(StatusEffects.BLINDNESS)) {
             player.sendMessage(Text.literal("The Gods are displeased"), true);
         }
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.tutorialmod.ruby_staff.tooltip").formatted(Formatting.GRAY));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }
 

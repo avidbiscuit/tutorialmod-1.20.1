@@ -2,6 +2,7 @@ package net.avidbiscuit.tutorialmod.block;
 
 import net.avidbiscuit.tutorialmod.TutorialMod;
 import net.avidbiscuit.tutorialmod.block.custom.SoundBlock;
+import net.avidbiscuit.tutorialmod.block.custom.TomatoCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -67,6 +68,10 @@ public class ModBlocks {
 
     public static final Block WEATHERED_WOOD_TRAP_DOOR = registerBlock("weathered_wood_trap_door",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(4f).nonOpaque(), BlockSetType.OAK));
+
+
+public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "tomato_crop"),
+        new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
