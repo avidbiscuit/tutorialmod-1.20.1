@@ -3,7 +3,9 @@ package net.avidbiscuit.tutorialmod;
 import net.avidbiscuit.tutorialmod.block.ModBlocks;
 import net.avidbiscuit.tutorialmod.item.ModItemGroups;
 import net.avidbiscuit.tutorialmod.item.ModItems;
+import net.avidbiscuit.tutorialmod.util.ModCustomTrades;
 import net.avidbiscuit.tutorialmod.util.ModLootTableModifiers;
+import net.avidbiscuit.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 
@@ -22,6 +24,9 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
