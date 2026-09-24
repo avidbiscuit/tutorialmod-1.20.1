@@ -1,8 +1,8 @@
-// 1.20.1	2026-09-24T00:47:48.6633876	Tutorial Mod/Recipes
+// 1.20.1	2026-09-24T01:26:39.3503223	Tutorial Mod/Recipes
 75971b18bca03db8b70430f7f7800ab3f21d84d3 data\tutorialmod\advancements\recipes\misc\ruby_axe.json
 d70089bbb5aad9c599edbd7d605eac3b401d4915 data\tutorialmod\advancements\recipes\misc\ruby_hoe.json
-411abf38574e6d0d7c61498657bfea1f3cf2f8f6 data\tutorialmod\recipes\ruby_hoe.json
 86450c7d40651ad0277585671568ea4da64b547f data\tutorialmod\recipes\ruby_axe.json
+411abf38574e6d0d7c61498657bfea1f3cf2f8f6 data\tutorialmod\recipes\ruby_hoe.json
 ea3f2fa9245d18a2803d0eb21c54bec74d0924df data\tutorialmod\recipes\ruby_from_blasting_raw_ruby.json
 0d7c2c08c410f561a1cbd71f794f7080ad662dc1 data\tutorialmod\recipes\ruby_pickaxe.json
 05f1304d48451987f659d4afa40b6a7cbde9f368 data\tutorialmod\advancements\recipes\misc\ruby_from_blasting_ruby_ore.json

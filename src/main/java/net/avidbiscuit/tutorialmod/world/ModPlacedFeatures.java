@@ -13,12 +13,12 @@ import java.util.List;
 
 public class ModPlacedFeatures {
 
-    public static final RegistryKey<PlacedFeature> DAHLIA_PLACED_KEY = registerKey("dahlia_placed");
+    public static final RegistryKey<PlacedFeature> DAHLIA_KEY = registerKey("dahlia");
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, DAHLIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DAHLIA_FLOWER_KEY),
+        register(context, DAHLIA_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DAHLIA_FLOWER_KEY),
                 RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
     }
